@@ -53,16 +53,16 @@
                 JSON.stringify
                 (
                     {
-                        "to": "/topics/SGURUKULA_V1", 
-                        "data" : 
-                        {
-                            "0" : f_0.value,
-                            "1" : f_1.value,
-                            "2" : f_2.value,
-                            "3" : f_3.value,
-                            "5" : f_5.value
-                        }
-                    }
+                          "condition": "!('any' in topics)", 
+                          "data" : 
+                                  {
+                                      "0" : f_0.value,
+                                      "1" : f_1.value,
+                                      "2" : f_2.value,
+                                      "3" : f_3.value,
+                                      "5" : f_5.value
+                                  }
+                      }
                 )
                 ,
                 success : function(response) 
